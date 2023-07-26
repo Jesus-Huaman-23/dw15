@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <h2>Formularios, campos de entrada</h2>
+
+    <form action="procesar.php">
+        <label for="lname">Nombre de pila :</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="fname">Apellido paterno : </label><br>
+        <input type="text" id="fname" name="fname" placeholder="Escribe tu apellido :"><br><br>
+        <label for="pname">Apellido materno :</label><br>
+        <input type="text" id="pname" name="pname" placeholder="Escribe tu apellido :">
+
+        <p>Elija su lenguaje web favorito</p>
+
+        <input type="radio" name="favo_languaje" id="css">
+        <label for="css">CSS</label>
+        <br>
+        <input type="radio" name="favo_languaje" id="javascript">
+        <label for="javascript">JAVASCRIPT</label>
+
+        <p>Mi movilidad favorita</p>
+
+        <input type="checkbox" name="vehicle">
+        <label for="vehicle">Tengo una bicicleta</label>
+
+        <input type="checkbox" name="vehicle2">
+        <label for="vehicle2">Tengo un carro</label>
+
+        <input type="checkbox" name="vehicle3">
+        <label for="vehicle3">Tengo un barco</label>
+
+        <br><br>
+        <label for="cars">Elije un carro</label>
+        <select name="cars" id="cars" size="3" multiple>
+            <option value="Volvo">Volvo</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Fiat" selected>Fiat</option>
+            <option value="Audi">Audi</option>
+        </select>
+        <br><br>
+        <p>Descripcion</p>
+        <textarea name="message" id="ltext" cols="30" rows="10"></textarea>
+
+        <br><br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+
+</html>
